@@ -7,7 +7,6 @@
 
 def dot_prod(list1, list2):
     """Return the dot product of two lists."""
-    print(f'{list1} || {list2}')
     if len(list1) != len(list2):
         return None
     dot_product = 0
@@ -26,8 +25,6 @@ def matrix_mult(matrix1, matrix2):
     for row in range(len(matrix2)):
         for column in range(len(matrix2[row])):
             inverted_matrix2[column].append(matrix2[row][column])
-            print(inverted_matrix2)
-    print(inverted_matrix2)
     for row in range(len(matrix1)):
         # These were originally columns in matrix2. Technically they are now rows, but
         # we don't want 2 variables called row
